@@ -1,0 +1,219 @@
+class dsu{
+    // int health;
+    // int he;
+    // int aa;
+    // int ab; // 4
+    // string s; // 24
+    // double ss; // 8
+    // string arr[10];
+
+    char x;
+    int a;
+    char arr[100]; // 1 only
+
+    // 1 byte for tracking or rectification
+};
+
+cout << sizeof(obj) << endl;
+
+by deafult all thing in class is privete
+
+padding and greedy aliment ? 
+
+-----------------------------------------
+static way and dynamic way 
+
+dsu obj;
+
+cout << obj.a << endl;
+cout << obj.getb() << endl;
+
+obj.setb(2);
+cout << obj.getb() << endl;
+
+dsu *aa = new dsu; ()
+cout << (*aa).a << endl;
+(*aa).setb(345);
+cout << (*aa).getb() << endl;   
+
+-----------------------------------
+
+address of current obj is store in this keyword 
+
+class dsu{
+
+    public:
+
+    dsu(){
+        cout << " sahil " << endl;
+    }
+
+    int c;
+
+    dsu(int c){
+        cout << "this " << this << endl;
+        this -> c = c;
+    }
+    
+    public:
+    int a;
+
+    private:
+    int b;
+
+    public:
+    int getb(){
+        return b;
+    }
+    void setb(int n){
+        b = n;
+    }
+};
+ 
+//------------------------------------code------------------------------------//
+ 
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);    
+    ll T = 1;
+    // cin >> T;
+    while(T--){
+
+        dsu a;
+
+        dsu obj(10);
+
+        cout << (&obj) << endl;
+        
+        
+        sahil:; 
+    }
+    return 0;
+} 
+
+--------------------------------------------------------------------------------------------------------------------------
+
+class dsu{
+
+    public:
+
+    dsu(){
+        cout << " sahil " << endl;
+    }
+
+    int c;
+
+    dsu(int c){
+        cout << "this " << this << endl;
+        this -> c = c;
+    }
+
+    int d, e;
+
+    dsu(int d, int e){
+        this -> d = d;
+        this -> e = e;
+    }
+    
+    public:
+    int a;
+
+    private:
+    int b;
+
+    public:
+    int getb(){
+        return b;
+    }
+    void setb(int n){
+        b = n;
+    }
+};
+ 
+//------------------------------------code------------------------------------//
+ 
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);    
+    ll T = 1;
+    // cin >> T;
+    while(T--){
+
+        dsu a;
+
+        dsu obj(10);
+
+        cout << (&obj) << endl;
+
+        dsu *b = new dsu(20);
+
+        dsu temp(10, 10);
+
+        cout << temp.d << " "  << temp.e << endl;        
+        sahil:; 
+    }
+    return 0;
+}
+
+ dsu b(a);
+
+why we pass through by ref? ans is this copy infinite loop
+
+dsu(dsu &temp){
+    this -> d = temp.d;
+    this -> e = temp.e;
+}
+
+when we write our copy constructor then defult is vanish
+
+shalow copy --> use same address
+
+deep copy --> make a new array 
+
+
+we already make object
+a = b;
+
+a.name = b.name;
+a.age = b.age;
+a.health = b.health
+
+desturctor --> remove the memory allocation
+
+static --> called destuctor automatically
+
+dynalmiclly --> manyally delete dsu; 
+
+~dsu(){
+    cout << "called" << endl;
+}
+
+const keyword?
+initiallion list
+
+public:
+static int wish;
+int dsu::wish = 5;
+
+cout << dsu::wish << endl;
+dsu a;
+cout << a.wish << endl;
+
+static function is use only static data menbers
+
+ static int random(){
+      return wish;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
