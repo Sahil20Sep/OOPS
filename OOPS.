@@ -198,12 +198,12 @@ int dsu::wish = 5;
 cout << dsu::wish << endl;
 dsu a;
 cout << a.wish << endl;
+cout << dsu::random() << endl;
 
 static function is use only static data menbers
-
- static int random(){
-      return wish;
-  }
+static int random(){
+  return wish;
+}
 
 
 
